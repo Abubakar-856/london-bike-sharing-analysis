@@ -2,7 +2,7 @@
 
 *Data Analytics Project Using Python (Jupyter Notebook) and Tableau*
 
-##📌 Overview
+## 📌 Overview
 
 This project analyzes London **Bike Sharing data** from Kaggle, containing **17,414** bike rental records. The goal is to understand how weather conditions, temperature, wind speed, seasons, and time affect bike-sharing usage in London. These insights can help improve operational planning, optimize bike availability, and enhance urban transportation strategies.
 
