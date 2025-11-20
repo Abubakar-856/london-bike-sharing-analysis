@@ -1,97 +1,61 @@
-🚴 London Bike Sharing Data Analysis
+# 🚴 London Bike Sharing Data Analysis
 
-Data Analytics Project Using Python (Jupyter Notebook) and Tableau
+*Data Analytics Project Using Python (Jupyter Notebook) and Tableau*
 
-📌 Overview
+##📌 Overview
 
-This project analyzes London Bike Sharing data from Kaggle, containing 17,414 bike rental records. The goal is to understand how weather conditions, temperature, wind speed, seasons, and time affect bike-sharing usage in London. These insights can help improve operational planning, optimize bike availability, and enhance urban transportation strategies.
+This project analyzes London **Bike Sharing data** from Kaggle, containing **17,414** bike rental records. The goal is to understand how weather conditions, temperature, wind speed, seasons, and time affect bike-sharing usage in London. These insights can help improve operational planning, optimize bike availability, and enhance urban transportation strategies.
 
-📊 Dataset Summary
+## 📊 Dataset Summary
 
-Total Rows: 17,414
-Total Columns: 10
+**Total Rows:** 17,414
+**Total Columns:** 10
 
-Key Feature Categories
+### **Key Feature Categories**
 
-Timestamp: Date and time of bike rentals
+**Timestamp:** Date and time of bike rentals
+**Count:** Total number of bikes rented at that timestamp
+**Temperature:** t1 – recorded temperature, t2 – adjusted temperature
+**Weather & Environment:** Humidity (hum), Wind Speed (wind_speed), Weather Code (weather_code)
+**Season:** Season of the year (1 = spring, 2 = summer, 3 = fall, 4 = winter)
 
-Count: Total number of bikes rented at that timestamp
+## 🐍 Exploratory Data Analysis (Python)
 
-Temperature: t1 – recorded temperature, t2 – adjusted temperature
+### ✔️ Data Loading & Cleaning
 
-Weather & Environment: Humidity (hum), Wind Speed (wind_speed), Weather Code (weather_code)
+- Imported dataset using **pandas**
+- Inspected structure using .head() and .info()
+- Renamed columns for clarity
+- Converted humidity from 0–100 scale to 0–1 scale
+- Standardized data types for season and weather_code
 
-Time Indicators: Holiday (is_holiday), Weekend (is_weekend)
+### ✔️ Feature Labeling & Mapping
 
-Season: Season of the year (1 = spring, 2 = summer, 3 = fall, 4 = winter)
+- Mapped numeric codes to meaningful labels
+- Improved interpretability for analysis and visualization
 
-Missing Values: None
-
-🐍 Exploratory Data Analysis (Python)
-✔️ Data Loading & Cleaning
-
-Imported dataset using pandas
-
-Inspected structure using .head() and .info()
-
-Renamed columns for clarity:
-
-cnt → count
-
-t1 → temp_real_C
-
-t2 → temp_feels_like_C
-
-hum → humidity_percent
-
-wind_speed → wind_speed_kph
-
-Converted humidity from 0–100 scale to 0–1 scale
-
-Standardized data types for season and weather_code
-
-✔️ Feature Labeling & Mapping
-
-Mapped numeric codes to meaningful labels:
-
-Season: 0 → spring, 1 → summer, 2 → autumn, 3 → winter
-
-Weather Code: 1 → Clear, 2 → Scattered clouds, 3 → Broken clouds, 4 → Cloudy, 7 → Rain, 10 → Rain with thunderstorm, 26 → Snowfall
-
-Improved interpretability for analysis and visualization
-
-✔️ Exporting Cleaned Data
+### ✔️ Exporting Cleaned Data
 
 Cleaned dataset saved as london_bikes_final.csv for further analysis and visualization
 
-🧠 Data Analysis Insights
+## 🧠 Data Analysis Insights
 
-Python-based analysis included:
+- Python-based analysis included:
+- Trend analysis of bike rentals over time
+- Impact of weather conditions on bike usage
+- Seasonal and temporal patterns of bike-sharing demand
+- Correlation between temperature, wind speed, humidity, and rental counts
 
-Trend analysis of bike rentals over time
+## 📈 Tableau Dashboard
 
-Impact of weather conditions on bike usage
+- An interactive Tableau dashboard was created to visualize:
+- Bike rental trends over time
+- Impact of weather and seasons on usage
+- Hourly and daily rental patterns
+- Impact of wind speed and temperature on usage
 
-Seasonal and temporal patterns of bike-sharing demand
+## 🛠 Technologies Used
 
-Correlation between temperature, wind speed, humidity, and rental counts
-
-📈 Tableau Dashboard
-
-An interactive Tableau dashboard was created to visualize:
-
-Bike rental trends over time
-
-Impact of weather and seasons on usage
-
-Hourly and daily rental patterns
-
-Impact of wind speed and temperature on usage
-
-🛠 Technologies Used
-
-Python: pandas
-
-Jupyter Notebook for data cleaning and analysis
-
-Tableau for interactive dashboard creation
+- Python: pandas
+- Jupyter Notebook for data cleaning and analysis
+- Tableau for interactive dashboard creation
