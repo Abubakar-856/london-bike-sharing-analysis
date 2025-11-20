@@ -8,17 +8,16 @@ This project analyzes London **Bike Sharing data** from Kaggle, containing **17,
 
 ## 📊 Dataset Summary
 
-**Total Rows:** 17,414
-
+**Total Rows:** 17,414  
 **Total Columns:** 10
 
 ### **Key Feature Categories**
 
-**Timestamp:** Date and time of bike rentals
-**Count:** Total number of bikes rented at that timestamp
-**Temperature:** t1 – recorded temperature, t2 – adjusted temperature
-**Weather & Environment:** Humidity (hum), Wind Speed (wind_speed), Weather Code (weather_code)
-**Season:** Season of the year (1 = spring, 2 = summer, 3 = fall, 4 = winter)
+- **Timestamp:** Date and time of bike rentals 
+- **Count:** Total number of bikes rented at that timestamp 
+- **Temperature:** t1 – recorded temperature, t2 – adjusted temperature 
+- **Weather & Environment:** Humidity (hum), Wind Speed (wind_speed), Weather Code (weather_code) 
+- **Season:** Season of the year (1 = spring, 2 = summer, 3 = fall, 4 = winter) 
 
 ## 🐍 Exploratory Data Analysis (Python)
 
