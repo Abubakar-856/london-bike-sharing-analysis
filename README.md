@@ -9,6 +9,7 @@ This project analyzes London **Bike Sharing data** from Kaggle, containing **17,
 ## 📊 Dataset Summary
 
 **Total Rows:** 17,414
+
 **Total Columns:** 10
 
 ### **Key Feature Categories**
